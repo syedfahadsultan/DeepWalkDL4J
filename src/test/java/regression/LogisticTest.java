@@ -38,7 +38,8 @@ public class LogisticTest {
     @Test
     public void makeModel() throws Exception {
 
-        String csvFile = "/Users/laurenshin/documents/linreg-graph-analytics/src/test/resources/iris-full.csv";
+
+        String csvFile = "/Users/fahad/NewWorkspace/ml-models/target/test-classes/iris-full.csv";
         String line = "";
         String csvSplitBy = ",";
 
