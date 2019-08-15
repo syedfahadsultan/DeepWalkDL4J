@@ -1,35 +1,5 @@
-= Neo4j Statistics/Machine Learning Procedures (WIP)
+1. mvn clean package
 
-This project uses http://commons.apache.org/proper/commons-math/[Apache Commons Math] to build, update, and store linear regression models in Neo4j.
+2. This will produce a jar-file,target/neo4j-ml-models-*.jar, that can be copied in the plugins directory of your Neo4j instance
 
-[NOTE]
-This project requires Neo4j 3.x+ 
-
-== Installation
-
-Download the https://github.com/neo4j-graph-analytics/ml-models/releases[latest relase-jar].
-Copy it into `$NEO4J_HOME/plugins` and restart your database.
-
-Check out the https://neo4j-graph-analytics.github.io/ml-models/[docs] for details on how to use the procedures.
-
-== Building Manually
-
-This project uses maven. To build a jar-file with the procedure in this
-project, simply package the project with maven and place the package in your local repo:
-
-    mvn clean package
-
-This will produce a jar-file,`target/neo4j-ml-models-*.jar`, that can be copied in the `plugins` directory of your Neo4j instance.
-
-== License
-
-Apache License V2, see LICENSE
-
-== Next Steps
-
-* Multiple Linear Regression (in progress)
-** Ordinary least squares (OLS)
-** http://www.jstor.org/stable/2347583[Miller updating regression] (OLS)
-** General least squares? (GLS)
-* Logistic Regression
-
+3. CALL embedding.dl4j.deepWalk();
